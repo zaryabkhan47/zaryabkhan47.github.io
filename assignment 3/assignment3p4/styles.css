@@ -1,0 +1,80 @@
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.logo {
+  font-size: 250%;
+  padding: 50px 20px;
+  margin: 0 auto;
+  max-width: 980px;
+  text-align: center;
+}
+
+.grid {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 980px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav {
+  background-color: #000;
+  padding: 1em 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: .5em 1em;
+}
+
+.photos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.feature {
+  width: 200px;
+  float: left;
+  margin-right: 20px;
+}
+
+article {
+  flex: 2;
+  padding-right: 20px;
+}
+
+aside {
+  flex: 1;
+}

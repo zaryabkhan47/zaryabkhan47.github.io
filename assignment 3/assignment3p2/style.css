@@ -1,0 +1,131 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* Styling for the div */
+
+div {
+  /* Setting width and height */
+  width: 200px;
+  height: 200px;
+  
+  /* Center the box horizontally */
+  margin: 0 auto;
+  
+  /* Center the text within the box */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Increase font size. 1rem is equal to the font-size of the root element (usually 16px). 
+     So, to get around 17-18 pixels, we can use 1.125rem */
+  font-size: 1.125rem; /* 1.125 * 16px = 18px */
+  
+  /* Base color for the design */
+  background-color: #e74c3c; /* Red color */
+  
+  /* Contrasting color for the text with a black text shadow */
+  color: #ecf0f1; /* Light contrasting color */
+  text-shadow: 1px 1px 1px black;
+  
+  /* Subtle border radius */
+  border-radius: 8px;
+  
+  /* 1-pixel solid border with a color similar to the base color, but a slightly darker shade */
+  border: 1px solid #c0392b; /* Slightly darker shade of red */
+  
+  /* Linear semi-transparent black gradient */
+  background-image: linear-gradient(to bottom right, transparent 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.2) 100%);
+  
+  /* Multiple box shadows */
+  box-shadow: 
+    3px 3px 10px rgba(0, 0, 0, 0.2), /* Standard box shadow */
+    inset 2px 2px 5px rgba(255, 255, 255, 0.5), /* Inset white shadow */
+    inset -2px -2px 5px rgba(0, 0, 0, 0.5); /* Inset black shadow */
+}
