@@ -1,3 +1,11 @@
+/*
+Name: Zaryab Khan
+Student ID: 100851100
+Date: 21 November 2023
+Description: JavaScript is used to enable dynamic thumbnail creation in an interactive image gallery.
+ It adds photos to a thumbnail bar, each with a personalized accessibility alt text. 
+To further improve user interaction and visual appeal,
+ it has a toggle button that alternates between brightening and dimming the gallery overlay.
  const imageFilenames = ['pic1.jpg' , 'pic2.jpg' , 'pic3.jpg' , 'pic4.jpg' , 'pic5.jpg'];
 /* Declaring the alternative text for each image file */
 
