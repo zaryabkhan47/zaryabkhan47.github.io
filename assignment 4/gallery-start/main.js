@@ -11,3 +11,14 @@ const altTexts = [
 imageFilenames.forEach((filename, index) => {
 newImage.setAttribute('src', `images/${filename}`);
 newImage.setAttribute('alt', altTexts[index]);
+thumbBar.appendChild(newImage);
+
+/*  Add Click event listener to each thumbnail image*/
+
+newImage.addEventListener('click' , () => {
+displayedImage.src = newImage.src;
+displayedImage.alt = newImage.alt;
+
+});
+
+})
