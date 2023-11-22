@@ -8,3 +8,6 @@ const altTexts = [
 'Description for pic4',
 'Description for pic5'
 ];
+imageFilenames.forEach((filename, index) => {
+newImage.setAttribute('src', `images/${filename}`);
+newImage.setAttribute('alt', altTexts[index]);
