@@ -6,7 +6,18 @@ Description: JavaScript is used to enable dynamic thumbnail creation in an inter
  It adds photos to a thumbnail bar, each with a personalized accessibility alt text. 
 To further improve user interaction and visual appeal,
  it has a toggle button that alternates between brightening and dimming the gallery overlay.
+
+*/
+const displayedImage = document.querySelector('.displayed-img');
+const thumbBar = document.querySelector('.thumb-bar');
+
+const btn = document.querySelector('button');
+const overlay = document.querySelector('.overlay');
+
+/* Declaring the array of image filenames */
  const imageFilenames = ['pic1.jpg' , 'pic2.jpg' , 'pic3.jpg' , 'pic4.jpg' , 'pic5.jpg'];
+
+
 /* Declaring the alternative text for each image file */
 
 const altTexts = [
@@ -16,7 +27,11 @@ const altTexts = [
 'Description for pic4',
 'Description for pic5'
 ];
+/* Looping through images */
+
 imageFilenames.forEach((filename, index) => {
+
+const newImage = document.createElement('img');
 newImage.setAttribute('src', `images/${filename}`);
 newImage.setAttribute('alt', altTexts[index]);
 thumbBar.appendChild(newImage);
@@ -43,3 +58,4 @@ btn.textContent = 'Darken';
 overlay.style.backgroundColor = 'rgba(0,0,0,0)'
 
 }
+ })
